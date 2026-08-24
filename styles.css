@@ -9,3 +9,12 @@
     font-style: normal;
 }
 
+.banner {
+    background-image:
+        url('assets/hero-circle.png'),
+        url('assets/hero-bg.png');
+
+    background-repeat: no-repeat, no-repeat;
+    background-position: center top, center;
+    background-size: 435px, cover;
+}
