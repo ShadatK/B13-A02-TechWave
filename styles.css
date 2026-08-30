@@ -15,8 +15,8 @@
         url('assets/hero-bg.png');
 
     background-repeat: no-repeat, no-repeat;
-    background-position: center top, center;
-    background-size: 435px, cover;
+    background-position: center 100px, top;
+    background-size: 415px, cover;
 }
 
 footer {
