@@ -14,7 +14,7 @@
 
 <body class="inter-font">
     <header>
-        <nav class="navbar bg-[#1A0B2E] text-white flex justify-around items-center py-6 border-b-2 border-[#412567]">
+        <nav class="hidden navbar bg-[#1A0B2E] text-white flex justify-around items-center py-6 border-b-2 border-[#412567]">
             <h2 class="text-5xl font-bold">Tech<span
                     class="bg-linear-to-tr from-[#F7E93F] via-[#FB09B4] to-[#9100F8] bg-clip-text text-transparent">Wave</span>
             </h2>
@@ -29,17 +29,24 @@
             </button>
         </nav>
 
-        <div class="banner relative text-white">
+        <div class="banner relative text-white
+        bg-size-[300px_auto,initial] md:bg-size-[350px_auto,cover] lg:bg-size-[415px_auto,cover]">
             <!-- New badge -->
             <div class="new-badge absolute top-32 left-[calc(50%+100px)]">
                 <button class="uppercase text-lg font-semibold text-[#1A0B2E] px-4 py-2 bg-[#00FF88] rounded-full shadow-[0px_3px_27px_0px_#00FF8880]">New</button>
             </div>
             <!-- Microphone -->
-            <div class="banner-image absolute top-48 left-1/2 -translate-x-1/2 w-56 h-56 flex items-center justify-center">
+            <div class="banner-image absolute left-1/2 -translate-x-1/2 
+            top-50 md:top-50 lg:top-56 
+            w-34 md:w-40 lg:w-44
+            h-34 md:h-40 lg:h-44
+            flex items-center justify-center">
                 <img class="h-full" src="assets/microphone.png" alt="Mic logo">
             </div>
             <!-- Banner content -->
-            <div class="banner-content max-w-xl mx-auto text-center pt-150 pb-32">
+            <div class="banner-content max-w-xl mx-auto text-center 
+            pt-120 md:pt-128 lg:pt-150 
+            pb-24 md:pb-28 lg:pb-32">
                 <h1 class="text-6xl font-extrabold">TechWave</h1>
                 <p class="font-normal opacity-80 mt-2 mb-6">Your daily dose of tech insights, productivity hacks, and personal growth</p>
                 <div class="flex flex-row gap-2 justify-center items-center">
@@ -54,7 +61,7 @@
 
     <main>
         <!-- about section -->
-        <div class="about-section bg-[#1A0B2E]">
+        <div class="hidden about-section bg-[#1A0B2E]">
             <div class="about-content text-white max-w-300 text-center mx-auto py-20">
                 <h2 class="text-5xl font-bold">About The Podcast</h2>
                 <p class="font-normal leading-8 opacity-80 mt-5">TechWave is your go-to podcast for staying ahead in the fast-paced world of technology.<br>We break down complex topics into digestible insights, explore productivity strategies that actually work,<br>and share stories of personal growth from industry leaders.</p>
@@ -82,7 +89,7 @@
         </div>
 
         <!-- why-choose section  -->
-        <div class="why-choose-section bg-[#230E3D] text-white py-28">
+        <div class="hidden why-choose-section bg-[#230E3D] text-white py-28">
             <h2 class="text-5xl font-bold mb-10 text-center">Why Choose TechWave</h2>
             <div class="info-cards grid grid-cols-3 grid-rows-3 gap-7 max-w-300 mx-auto">
                 <div class="cards bg-[#351165]/40 p-10 rounded-[40px] row-span-2">
@@ -116,7 +123,7 @@
         </div>
 
         <!-- featured section -->
-        <div class="featured-section bg-[#1A0B2E] text-white py-28">
+        <div class="hidden featured-section bg-[#1A0B2E] text-white py-28">
             <h2 class="text-5xl font-bold mb-10 text-center">Featured Episodes</h2>
             <div class="featured-content grid grid-cols-3 gap-7 max-w-300 text-center mx-auto pt-10">
                 <div class="featured-card rounded-[40px]">
@@ -162,7 +169,7 @@
         </div>
 
         <!-- host section -->
-        <div class="host-section bg-[#1A0B2E] text-white pb-28">
+        <div class="hidden host-section bg-[#1A0B2E] text-white pb-28">
             <h2 class="text-5xl font-bold mb-10 text-center">Meet the Host</h2>
             <div class="host-content bg-[#250D44] rounded-[40px] max-w-300 mx-auto p-10 flex gap-6">
                 <img src="assets/host.png" alt="Host Picture">
@@ -181,7 +188,7 @@
         </div>
     </main>
 
-    <footer class="text-center">
+    <footer class="hidden text-center">
         <div class="footer-content text-white py-28">
             <h1 class="text-7xl font-extrabold">Tech<span class="bg-linear-to-tr from-[#F7E93F] via-[#FB09B4] to-[#9100F8] bg-clip-text text-transparent">Wave</span></h1>
             <div class="my-8 flex gap-10 justify-center items-center align-middle">
