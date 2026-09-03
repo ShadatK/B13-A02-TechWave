@@ -4,28 +4,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechWave</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+        @theme {
+            --breakpoint-*: initial;
+            --breakpoint-md: 36rem; /* 576px */
+            --breakpoint-lg: 62rem; /* 992px */
+        }
+    </style>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
         integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>TechWave</title>
 </head>
 
 <body class="inter-font">
     <header>
-        <nav class="hidden navbar bg-[#1A0B2E] text-white flex justify-around items-center py-6 border-b-2 border-[#412567]">
+        <nav class="navbar bg-[#1A0B2E] text-white flex justify-between px-5 lg:justify-around items-center py-6 border-b-2 border-[#412567]">
             <h2 class="text-5xl font-bold">Tech<span
                     class="bg-linear-to-tr from-[#F7E93F] via-[#FB09B4] to-[#9100F8] bg-clip-text text-transparent">Wave</span>
             </h2>
-            <ul class="menu flex gap-8">
+            <ul class="menu hidden lg:flex gap-8">
                 <li class="text-lg font-medium leading-[120%]">About</li>
                 <li class="text-lg font-medium leading-[120%]">Episodes</li>
                 <li class="text-lg font-medium leading-[120%]">Host</li>
             </ul>
             <button
-                class="text-lg font-semibold px-4 py-3 rounded-3xl bg-linear-to-tr from-[#F7E93F] via-[#FB09B4] to-[#9100F8]">Subscribe
+                class="hidden lg:block text-lg font-semibold px-4 py-3 rounded-3xl bg-linear-to-tr from-[#F7E93F] via-[#FB09B4] to-[#9100F8]">Subscribe
                 <i class="fa-solid fa-arrow-right fa-sm"></i>
+            </button>
+            <!-- Hamburger -->
+            <button class="lg:hidden text-2xl">
+                <i class="fa-solid fa-bars"></i>
             </button>
         </nav>
 
@@ -64,7 +75,7 @@
     <main>
         <!-- about section -->
         <div class="about-section bg-[#1A0B2E]">
-            <div class="about-content text-white max-w-100 lg:max-w-300 text-center mx-auto py-20">
+            <div class="about-content text-white max-w-100 md:max-w-300 text-center mx-auto py-20">
                 <h2 class="text-5xl font-bold">About The Podcast</h2>
                 <p class="font-normal leading-8 opacity-80 mt-5">TechWave is your go-to podcast for staying ahead in the fast-paced world of technology.<br>We break down complex topics into digestible insights, explore productivity strategies that actually work,<br>and share stories of personal growth from industry leaders.</p>
                 <p class="text-lg font-normal leading-8 opacity-80 mt-12">Join thousands of young professionals and tech enthusiasts who start their day with TechWave.</p>
