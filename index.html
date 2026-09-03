@@ -30,7 +30,9 @@
         </nav>
 
         <div class="banner relative text-white
-        bg-size-[300px_auto,initial] md:bg-size-[350px_auto,cover] lg:bg-size-[415px_auto,cover]">
+        bg-size-[340px_auto,auto_100%] 
+        md:bg-size-[370px_auto,auto_100%] 
+        lg:bg-size-[415px_auto,cover]">
             <!-- New badge -->
             <div class="new-badge absolute top-32 left-[calc(50%+100px)]">
                 <button class="uppercase text-lg font-semibold text-[#1A0B2E] px-4 py-2 bg-[#00FF88] rounded-full shadow-[0px_3px_27px_0px_#00FF8880]">New</button>
@@ -204,14 +206,22 @@
         </div>
     </main>
 
-    <footer class="hidden text-center">
-        <div class="footer-content text-white py-28">
+    <footer class="text-center bg-size-[auto_100%] lg:bg-cover">
+        <div class="footer-content text-white py-10 md:py-20 lg:py-28">
             <h1 class="text-7xl font-extrabold">Tech<span class="bg-linear-to-tr from-[#F7E93F] via-[#FB09B4] to-[#9100F8] bg-clip-text text-transparent">Wave</span></h1>
-            <div class="my-8 flex gap-10 justify-center items-center align-middle">
-                <p class="font-medium opacity-60"><img class="inline mr-2" src="assets/spotify.png" alt="Spotify logo">Spotify</p>
-                <p class="font-medium opacity-60"><img class="inline mr-2" src="assets/apple-podcast.png" alt="Apple Podcasts logo">Apple Podcasts</p>
-                <p class="font-medium opacity-60"><img class="inline mr-2" src="assets/youtube-podcast.png" alt="YouTube logo">YouTube</p>
-                <p class="font-medium opacity-60"><img class="inline mr-2" src="assets/twitter.png" alt="Twitter logo">Twitter</p>
+            <div class="my-8 flex flex-wrap md:flex-nowrap gap-4 justify-center items-center align-middle">
+                <p class="font-medium">
+                    <img class="inline mr-2" src="assets/spotify.png" alt="Spotify logo"><span class="opacity-60">Spotify</span>
+                </p>
+                <p class="font-medium">
+                    <img class="inline mr-2" src="assets/apple-podcast.png" alt="Apple Podcasts logo"><span class="opacity-60">Apple Podcasts</span>
+                </p>
+                <p class="font-medium">
+                    <img class="inline mr-2" src="assets/youtube-podcast.png" alt="YouTube logo"><span class="opacity-60">YouTube</span>
+                </p>
+                <p class="font-medium">
+                    <img class="inline mr-2" src="assets/twitter.png" alt="Twitter logo"><span class="opacity-60">Twitter</span>
+                </p>
             </div>
             <p class="font-normal leading-6 opacity-60">&copy; 2026 TechWave Podcast. All rights reserved.</p>
         </div>
