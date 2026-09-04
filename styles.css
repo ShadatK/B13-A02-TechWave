@@ -11,15 +11,15 @@
 
 .banner {
     background-image:
-        url('assets/hero-circle.png'),
-        url('assets/hero-bg.png');
+        url('./assets/hero-circle.png'),
+        url('./assets/hero-bg.png');
 
     background-repeat: no-repeat, no-repeat;
     background-position: center 100px, top;
 }
 
 footer {
-    background-image: url('assets/footer-bg.png');
+    background-image: url('./assets/footer-bg.png');
     background-repeat: no-repeat;
     background-position: center;
 }
