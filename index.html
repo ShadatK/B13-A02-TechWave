@@ -21,21 +21,20 @@
 
 <body class="inter-font">
     <header>
-        <nav class="navbar bg-[#1A0B2E] text-white flex justify-between px-5 lg:justify-around items-center py-6 border-b-2 border-[#412567]">
+        <nav class="navbar bg-[#1A0B2E] text-white flex justify-between px-5 lg:justify-around items-center h-24 border-b-2 border-[#412567]">
             <h2 class="text-5xl font-bold">Tech<span
                     class="bg-linear-to-tr from-[#F7E93F] via-[#FB09B4] to-[#9100F8] bg-clip-text text-transparent">Wave</span>
             </h2>
             <ul class="menu hidden lg:flex gap-8">
-                <li class="text-lg font-medium leading-[120%]">About</li>
-                <li class="text-lg font-medium leading-[120%]">Episodes</li>
-                <li class="text-lg font-medium leading-[120%]">Host</li>
+                <li class="text-lg font-medium leading-[120%]"><a class="cursor-pointer" href="#about" target="_self">About</a></li>
+                <li class="text-lg font-medium leading-[120%]"><a class="cursor-pointer" href="#episodes" target="_self">Episodes</a></li>
+                <li class="text-lg font-medium leading-[120%]"><a class="cursor-pointer" href="#host" target="_self">Host</a></li>
             </ul>
-            <button
-                class="hidden lg:block text-lg font-semibold px-4 py-3 rounded-3xl bg-linear-to-tr from-[#F7E93F] via-[#FB09B4] to-[#9100F8]">Subscribe
+            <button class="hidden lg:block text-lg font-semibold px-4 py-3 rounded-full bg-linear-to-tr from-[#F7E93F] via-[#FB09B4] to-[#9100F8] transition duration-100 hover:scale-105 hover:bg-none hover:border-2 hover:border-[#FB09B4] cursor-pointer">Subscribe
                 <i class="fa-solid fa-arrow-right fa-sm"></i>
             </button>
             <!-- Hamburger -->
-            <button class="lg:hidden text-2xl">
+            <button class="lg:hidden text-2xl cursor-pointer">
                 <i class="fa-solid fa-bars"></i>
             </button>
         </nav>
@@ -63,9 +62,9 @@
                 <h1 class="text-6xl font-extrabold">TechWave</h1>
                 <p class="font-normal opacity-80 mt-2 mb-6">Your daily dose of tech insights, productivity hacks, and personal growth</p>
                 <div class="flex flex-row gap-2 justify-center items-center">
-                    <button class="text-lg font-semibold px-4 py-3 rounded-3xl bg-linear-to-tr from-[#F7E93F] via-[#FB09B4] to-[#9100F8]">
+                    <button class="text-lg font-semibold px-4 py-3 rounded-full bg-linear-to-tr from-[#F7E93F] via-[#FB09B4] to-[#9100F8] transition duration-300 hover:scale-105 hover:bg-none hover:border-2 hover:border-[#FB09B4] hover:cursor-pointer">
                         <img class="inline" src="assets/spotify.png" alt="Spotify icon"> Listen on Spotify</button>
-                    <button class="text-lg font-semibold text-[#00FF88] px-4 py-3 border-2 border-[#00FF88] rounded-3xl">
+                    <button class="text-lg font-semibold text-[#00FF88] px-4 py-3 border-2 border-[#00FF88] rounded-full transition duration-300 hover:scale-105 hover:bg-[#00FF88]/30 hover:cursor-pointer">
                         <img class="inline" src="assets/message.png" alt="Message icon"> Subscribe</button>
                 </div>
             </div>
@@ -139,7 +138,7 @@
         <div class="featured-section bg-[#1A0B2E] text-white py-10 md:py-20 lg:py-28">
             <h2 class="text-5xl font-bold mb-6 md:mb-8 lg:mb-10 text-center">Featured Episodes</h2>
             <div class="featured-content grid grid-cols-1 lg:grid-cols-3 gap-7 max-w-100 lg:max-w-300 text-center mx-auto pt-10">
-                <div class="featured-card rounded-[40px]">
+                <div class="featured-card rounded-[40px] transition duration-300 hover:-translate-y-5">
                     <div>
                         <iframe class="w-full h-52 aspect-video rounded-t-[40px]"
                             src="https://www.youtube.com/embed/sh0ZhMOPVBg" 
@@ -152,7 +151,7 @@
                         <p class="text-[#00FF88] leading-6 font-semibold"><img class="inline mr-1.5" src="assets/clock.png" alt="clock icon"> 42 min</p>
                     </div>
                 </div>
-                <div class="featured-card rounded-[40px]">
+                <div class="featured-card rounded-[40px] transition duration-300 hover:-translate-y-5">
                     <div>
                         <iframe class="w-full h-52 aspect-video rounded-t-[40px]"
                             src="https://www.youtube.com/embed/6Ait5R-3-lI"
@@ -165,7 +164,7 @@
                         <p class="text-[#00FF88] leading-6 font-semibold"><img class="inline mr-1.5" src="assets/clock.png" alt="clock icon"> 35 min</p>
                     </div>
                 </div>
-                <div class="featured-card rounded-[40px]">
+                <div class="featured-card rounded-[40px] transition duration-300 hover:-translate-y-5">
                     <div>
                         <iframe class="w-full h-52 aspect-video rounded-t-[40px]"
                             src="https://www.youtube.com/embed/jvOIGU6pF2o"
